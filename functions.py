@@ -29,5 +29,8 @@ def handle_string(value):
 
 # Task #3
 def handle_list_of_tuples(list_of_tuples):
+    '''a function that takes list of tuples (e.g. handle_list_of_tuples(list))
+    and sort it based on the next rules:
+    name / age / height / weight'''
     pp = pprint.PrettyPrinter()
     pp.pprint(sorted(list_of_tuples, key=lambda x: (x[0], -int(x[1]), -int(x[2]), -int(x[3]))))
